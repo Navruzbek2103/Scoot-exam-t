@@ -1,0 +1,59 @@
+.telemetry{
+  margin-bottom: 155px;
+
+  .container-big{
+    background-image: url("./../../images/circle-bg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right calc(10% - 450px) top 0;
+  }
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 445px;
+    width: 100%;
+  }
+
+  &__wrapper-title{
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+    margin-bottom: 24px;
+  }
+
+  &__wrapper-text{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+    margin-bottom: 40px;
+  }
+
+  &__picture{
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 352px);
+      display: inline-block;
+      width: 740px;
+      height: 150px;
+      background-image: url("./../../images/arrow-left-telemetry.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+}

@@ -24,6 +24,15 @@
 
   &__icon-list{
     display: flex;
+    align-items: center;
     gap: 24px;
+  }
+
+  &__icon-img{
+    color: #FCB72B;
+
+    &:hover{
+      color: $light-grey;
+    }
   }
 }
