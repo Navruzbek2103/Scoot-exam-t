@@ -341,6 +341,24 @@ template {
   display: none;
 }
 
+/* space-mono-700 - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/space-mono-v11-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v11-latin-700.woff") format("woff");
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lexend-deca-v16-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v16-latin-regular.woff") format("woff");
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -352,16 +370,19 @@ html {
 }
 
 body {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
   padding: 0;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 16px;
 }
 
@@ -373,6 +394,16 @@ main {
 
 img {
   vertical-align: middle;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul, ol {
@@ -392,25 +423,251 @@ ul, ol {
   clip: rect(0 0 0 0);
 }
 
+.container-big {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .container {
-  max-width: 1320px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-header {
-  width: 100%;
-  height: 400px;
-  background-color: orange;
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 19px 0;
 }
 
-header h2.header__title {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  padding-top: 100px;
-  color: aqua;
-  text-shadow: 0 0 4px black;
-  font-size: 72px;
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 58px;
+}
+
+.header .menu-img {
+  max-width: 108px;
+  width: 100%;
+  height: 27px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.nav__item-link {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.nav__item-link:hover {
+  color: #FCB72B;
+}
+
+.button {
+  background-color: #FCB72B;
+  text-transform: capitalize;
+  border: none;
+  padding: 14px 39px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFF;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 3px solid #FCB72B;
+  background-color: transparent;
+  color: #FCB72B;
+}
+
+.button:active {
+  background-color: #e0ddd9;
+}
+
+.hero {
+  margin-bottom: 160px;
+}
+
+.hero .container-big {
+  background-image: url("./../../images/hero-img-1440px-1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__container {
+  padding: 153px 0;
+}
+
+.hero__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 40px;
+}
+
+.hero__wrapper-title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFF;
+}
+
+.hero__wrapper-text {
+  position: relative;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFF;
+  margin-left: 95px;
+}
+
+.hero__wrapper-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: calc(50% + 260px);
+  display: inline-block;
+  width: 202px;
+  height: 15px;
+  background-color: #FCB72B;
+}
+
+.hero__wrapper-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 240px);
+  -webkit-transform: translateY(calc(50% - 55%));
+          transform: translateY(calc(50% - 55%));
+  display: inline-block;
+  width: 447px;
+  height: 148px;
+  background-image: url("./../../images/arrow-right-hero.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.hero__btn {
+  margin-left: 95px;
+}
+
+.services {
+  margin-bottom: 200px;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__item {
+  max-width: 380px;
+  width: 100%;
+}
+
+.services__item-top {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.services__item-top::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 100%;
+  display: inline-block;
+  max-width: 380px;
+  width: 100%;
+  height: 15px;
+  z-index: -1;
+  background-color: #E5ECF4;
+}
+
+.services__item-top::after {
+  content: "";
+  display: inline-block;
+  width: 96px;
+  height: 96px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.services__item:nth-child(1) .services__item-top::after {
+  background-image: url("./../../images/location-icon.svg");
+}
+
+.services__item:nth-child(2) .services__item-top::after {
+  background-image: url("./../../images/scooter-icon.svg");
+}
+
+.services__item:nth-child(3) .services__item-top::after {
+  background-image: url("./../../images/speed-scooter-icon.svg");
+}
+
+.services__item:first-child .services__item-top::before {
+  max-width: 165px;
+  width: 100%;
+}
+
+.services__item-bottom {
+  margin-right: 30px;
+}
+
+.services__item-bottom-title {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 27px;
+}
+
+.services__item-bottom-text {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
 }
 /*# sourceMappingURL=main.css.map */

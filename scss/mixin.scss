@@ -1,0 +1,39 @@
+@mixin button {
+  background-color: $orange;
+  text-transform: capitalize;
+  border: none;
+  padding: 14px 39px;
+  font-size: 15px;
+  line-height: 25px;
+  color: $white;
+  border: 3px solid transparent;
+  cursor: pointer;
+
+  &:hover{
+    border: 3px solid $orange;
+    background-color: transparent;
+    color: $orange;
+  }
+
+  &:active{
+    background-color: rgb(224, 221, 217);
+  }
+
+}
+
+@mixin nav {
+  &__list{
+    display: flex;
+    gap: 32px;
+  }
+
+  &__item-link{
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim-grey;
+
+    &:hover{
+      color: $orange
+    }
+  }
+}

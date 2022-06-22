@@ -1,14 +1,29 @@
-header{
-  width: 100%;
-  height: 400px;
-  background-color: $orange;
-  h2.header__title{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding-top: 100px;
-    color: $aqua;
-    text-shadow: 0 0 4px black;
-    font-size: $f-size1;
+.header{
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
   }
+
+  &__menu{
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+
+  .menu-img{
+    max-width: 108px;
+    width: 100%;
+    height: 27px;
+
+  }
+
+}
+.nav{
+  @include nav;
+}
+.button{
+  @include button;
 }
