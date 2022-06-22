@@ -1,0 +1,106 @@
+.payments{
+  margin-bottom: 160px;
+
+  .container-big{
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 93%;
+      display: inline-block;
+      width: 445px;
+      height: 445px;
+      background-image: url("./../../images/circle-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 93%;
+      display: inline-block;
+      width: 445px;
+      height: 445px;
+      background-image: url("./../../images/circle-bg.png");
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+
+
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item:not(:last-child){
+    margin-bottom: 160px;
+  }
+
+  &__item-box-image{
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      right: calc(50% + 10px);
+      display: inline-block;
+      width: 355px;
+      height: 147px;
+      background-image: url("./../../images/arrow-right-payments.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__item-wrapper{
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__box-img{
+    border-radius: 50%;
+  }
+
+  &__item-wrapper-title{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $dark-navy;
+    margin-bottom: 24px;
+  }
+
+  &__item-wrapper-text{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim-grey;
+    margin-bottom: 40px;
+  }
+
+  &__item:nth-child(even) &__item-box-image{
+    order: 1;
+    transform: scaleX(-1);
+
+    &::before{
+      top: 92px;
+      z-index: 2;
+    }
+  }
+
+}
