@@ -5,7 +5,7 @@
         "../scss/main.scss",
         "../scss/_normalize.scss",
         "../scss/_variables.scss",
-        "../scss/mixin.scss",
+        "../scss/_mixin.scss",
         "../scss/_fonts.scss",
         "../scss/_general.scss",
         "../scss/blocks/_all-files.scss",
