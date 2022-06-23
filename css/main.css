@@ -1714,4 +1714,43 @@ ul, ol {
 .footer__icon-img:hover {
   color: #E5ECF4;
 }
+
+@media only screen and (max-width: 1010px) {
+  .footer .container {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .footer .container {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .footer__container {
+    padding: 88px 0 88px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 85px;
+  }
+  .footer__menu {
+    gap: 41px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
