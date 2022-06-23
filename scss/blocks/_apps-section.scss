@@ -1,7 +1,6 @@
 .apps{
   .container-big{
     background-color: $dark-navy;
-    padding: 102px 0;
     background-image: url("./../../images/apps-section-bg.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -9,6 +8,7 @@
   }
 
   &__container{
+    padding: 102px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,17 @@
     border-radius: 4px;
     gap: 12px;
     background-color: $light-grey;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $light-dim-grey;
+    }
+
+    &:active{
+      background-color: $white;
+    }
   }
+
 
   &__wrapper-desc-text{
     font-size: 10px;
@@ -51,5 +61,81 @@
     line-height: 24px;
     letter-spacing: -0.892857px;
     color: $dark-navy;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .apps{
+
+    .container{
+      max-width: 800px;
+    }
+
+    &__container{
+      padding: 90px 0;
+    }
+
+    &__box{
+      max-width: 350px;
+    }
+
+    &__box-title{
+      font-size: 40px;
+    }
+
+
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+  .apps{
+
+    &__container{
+      flex-direction: column;
+    }
+
+    &__box{
+      max-width: 455px;
+      margin-bottom: 40px;
+    }
+
+    &__box-title{
+      font-size: 48px;
+      text-align: center;
+
+    }
+
+    &__wrapper{
+      display: flex;
+      gap: 12px;
+    }
+
+    &__wrapper-app{
+      padding: 6px 12px;
+      gap: 8px;
+    }
+
+    &__wrapper-desc-text{
+      font-size: 9px;
+    }
+
+    &__wrapper-desc-title{
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .apps{
+
+    .container{
+      max-width: 340px;
+    }
+
+    &__box-title{
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
 }
