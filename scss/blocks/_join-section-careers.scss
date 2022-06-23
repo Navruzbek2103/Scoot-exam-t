@@ -1,0 +1,84 @@
+.join-careers{
+  margin-bottom: 120px;
+
+  &__container-title{
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: $dark-navy;
+    margin-bottom: 103px;
+  }
+
+  &__list{
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-box{
+    position: relative;
+    margin-bottom: 87px;
+  }
+
+  &__item-box::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $orange;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: $dark-navy;
+    padding: 34px;
+  }
+
+  &__item:nth-child(1) &__item-box::after{
+    content: "01";
+  }
+
+  &__item:nth-child(2) &__item-box::after{
+    content: "02";
+  }
+
+  &__item:nth-child(3) &__item-box::after{
+    content: "03";
+  }
+
+  &__item-img{
+    max-width: 240px;
+    width: 100%;
+    height: 240px;
+  }
+
+  &__item-subtitle{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: $dark-navy;
+    margin-bottom: 27px;
+  }
+
+  &__item-subtext{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $dim-grey;
+  }
+}

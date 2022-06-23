@@ -1,0 +1,72 @@
+.mission-careers{
+  margin-bottom: 120px;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__wrapper{
+    max-width: 445px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  &__wrapper-title{
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $dark-navy;
+    margin-bottom: 24px;
+  }
+
+  &__wrapper-text{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim-grey;
+    margin-bottom: 40px;
+  }
+
+  &__box{
+    position: relative;
+  }
+
+  &__box::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 352px);
+    display: inline-block;
+    width: 742px;
+    height: 145px;
+    background-image: url("./../../images/arrow-left-telemetry.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &__box::after{
+    content: "";
+    position: absolute;
+    left: calc(100% + 64px);
+    display: inline-block;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $light-grey;
+  }
+
+  &__box-img{
+    border-radius: 50%;
+    max-width: 445px;
+    width: 100%;
+    height: 445px;
+  }
+}
