@@ -144,7 +144,6 @@
 
     &__item{
       max-width: 570px;
-      // background-color: bisque;
       margin-bottom: 40px;
       display: flex;
       justify-content: space-between;
@@ -248,7 +247,6 @@
 @media only screen and (max-width: 470px){
   .services{
     margin-bottom: 150px;
-    border: 1px solid red;
 
     .container{
       max-width: 440px;

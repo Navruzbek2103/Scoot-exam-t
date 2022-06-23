@@ -1032,7 +1032,6 @@ ul, ol {
 @media only screen and (max-width: 470px) {
   .services {
     margin-bottom: 150px;
-    border: 1px solid red;
   }
   .services .container {
     max-width: 440px;
@@ -1141,6 +1140,154 @@ ul, ol {
   background-image: url("./../../images/arrow-left-telemetry.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.telemetry__img {
+  max-width: 445px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1150px) {
+  .telemetry {
+    margin-bottom: 155px;
+  }
+  .telemetry .container {
+    max-width: 980px;
+  }
+  .telemetry__wrapper {
+    max-width: 435px;
+  }
+  .telemetry__wrapper-title {
+    font-size: 44px;
+  }
+  .telemetry__picture {
+    max-width: 445px;
+    width: 100%;
+    position: relative;
+  }
+  .telemetry__picture::before {
+    width: 600px;
+  }
+  .telemetry__img {
+    max-width: 410px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .telemetry {
+    margin-bottom: 155px;
+  }
+  .telemetry .container-big {
+    background-position: right calc(10% - 380px) top 0;
+  }
+  .telemetry .container {
+    max-width: 800px;
+  }
+  .telemetry__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .telemetry__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 490px;
+    text-align: center;
+  }
+  .telemetry__wrapper-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .telemetry__picture {
+    margin-bottom: 56px;
+  }
+  .telemetry__picture::before {
+    width: 680px;
+  }
+  .telemetry__img {
+    max-width: 445px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .telemetry {
+    margin-bottom: 155px;
+  }
+  .telemetry .container-big {
+    background-position: right calc(10% - 400px) top -15%;
+  }
+  .telemetry .container {
+    max-width: 500px;
+  }
+  .telemetry__picture {
+    max-width: 355px;
+  }
+  .telemetry__picture::before {
+    width: 545px;
+    left: calc(50% - 270px);
+  }
+  .telemetry__img {
+    max-width: 355px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .telemetry {
+    margin-bottom: 155px;
+  }
+  .telemetry .container-big {
+    background-position: right calc(10% - 250px) top 0%;
+    background-size: 53%;
+  }
+  .telemetry .container {
+    max-width: 450px;
+  }
+  .telemetry__picture {
+    max-width: 290px;
+  }
+  .telemetry__picture::before {
+    width: 430px;
+    height: 100px;
+    left: calc(50% - 190px);
+  }
+  .telemetry__img {
+    max-width: 290px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .telemetry {
+    margin-bottom: 145px;
+  }
+  .telemetry .container-big {
+    background-image: none;
+  }
+  .telemetry .container {
+    max-width: 450px;
+  }
+  .telemetry__wrapper-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .telemetry__picture {
+    max-width: 240px;
+  }
+  .telemetry__picture::before {
+    width: 300px;
+    height: 100px;
+    left: calc(50% - 140px);
+  }
+  .telemetry__img {
+    max-width: 240px;
+  }
 }
 
 .payments {
