@@ -44,3 +44,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 650px){
+  .header{
+    &__container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav{
+      display: none;
+    }
+    .button{
+      display: none;
+    }
+  }
+}

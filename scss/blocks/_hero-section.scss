@@ -72,8 +72,7 @@
 
 @media only screen and (max-width: 1010px){
   .hero{
-    margin-bottom: 160px;
-    border: 1px solid red;
+    margin-bottom: 150px;
 
     .container{
       max-width: 900px;
@@ -106,8 +105,7 @@
 
 @media only screen and (max-width: 900px){
   .hero{
-    margin-bottom: 160px;
-    border: 1px solid orange;
+    margin-bottom: 140px;
 
     .container{
       max-width: 800px;
@@ -129,8 +127,7 @@
 
 @media only screen and (max-width: 768px){
   .hero{
-    margin-bottom: 160px;
-    border: 1px solid blue;
+    margin-bottom: 122px;
 
     .container-big{
       background-image: url("./../../images/hero-img-768px-1x.jpg");
@@ -197,7 +194,6 @@
 @media only screen and (max-width: 430px){
   .hero{
     margin-bottom: 120px;
-    border: 1px solid greenyellow;
 
     .container-big{
       background-image: url("./../../images/hero-img-768px-1x.jpg");
