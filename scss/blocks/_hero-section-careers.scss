@@ -114,3 +114,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 375px){
+  .hero-careers{
+
+    .container-big{
+      background-image: url("./../../images/hero-breadcrumb-careers-375px-1x.jpg");
+    }
+  }
+}
