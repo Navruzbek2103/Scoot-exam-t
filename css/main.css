@@ -1958,6 +1958,137 @@ ul, ol {
   height: 100%;
 }
 
+@media only screen and (max-width: 1010px) {
+  .mission-careers {
+    margin-bottom: 120px;
+  }
+  .mission-careers .container {
+    max-width: 900px;
+  }
+  .mission-careers__wrapper {
+    max-width: 435px;
+    margin-right: 20px;
+  }
+  .mission-careers__box::before {
+    left: calc(50% - 242px);
+    width: 400px;
+    height: 125px;
+  }
+  .mission-careers__box::after {
+    left: calc(100% + 30px);
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .mission-careers__box-img {
+    max-width: 330px;
+    max-height: 330px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mission-careers .container {
+    max-width: 670px;
+  }
+  .mission-careers__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .mission-careers__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 575px;
+    text-align: center;
+  }
+  .mission-careers__box::before {
+    left: calc(50% - 282px);
+    width: 580px;
+    height: 145px;
+  }
+  .mission-careers__box {
+    margin-bottom: 64px;
+  }
+  .mission-careers__box::after {
+    left: calc(100% + 64px);
+    max-width: 445px;
+    max-height: 445px;
+  }
+  .mission-careers__box-img {
+    max-width: 445px;
+    max-height: 445px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mission-careers .container {
+    max-width: 430px;
+  }
+  .mission-careers__wrapper {
+    max-width: 385px;
+  }
+  .mission-careers__wrapper-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .mission-careers__box::before {
+    left: calc(50% - 180px);
+    width: 380px;
+    height: 105px;
+  }
+  .mission-careers__box {
+    margin-bottom: 60px;
+  }
+  .mission-careers__box::after {
+    display: none;
+  }
+  .mission-careers__box-img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mission-careers .container {
+    max-width: 370px;
+  }
+  .mission-careers__wrapper-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .mission-careers__box::before {
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 100px;
+  }
+  .mission-careers__box {
+    margin-bottom: 56px;
+  }
+  .mission-careers__box-img {
+    max-width: 280px;
+    max-height: 280px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mission-careers .container {
+    max-width: 320px;
+  }
+  .mission-careers__wrapper-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .mission-careers__box::before {
+    left: calc(50% - 155px);
+    width: 310px;
+  }
+  .mission-careers__box-img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
 .join-careers {
   margin-bottom: 120px;
 }

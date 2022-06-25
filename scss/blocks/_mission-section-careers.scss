@@ -63,19 +63,6 @@
     height: 100%;
     background-color: $light-grey;
     border-radius: 50%;
-
-    // content: "";
-    // position: absolute;
-    // left: calc(100% + 64px);
-    // background-image: url("./../../images/circle-bg.png");
-    // display: inline-block;
-    // max-width: 445px;
-    // min-width: 200px;
-    // width: 100%;
-    // max-height: 445px;
-    // min-height: 20px;
-    // height: 100%;
-    // border-radius: 50%;
   }
 
   &__box-img{
@@ -84,5 +71,169 @@
     width: 100%;
     max-height: 445px;
     height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1010px){
+  .mission-careers{
+    margin-bottom: 120px;
+
+    .container{
+      max-width: 900px;
+    }
+
+    &__wrapper{
+      max-width: 435px;
+      margin-right: 20px;
+    }
+
+    &__box::before{
+      left: calc(50% - 242px);
+      width: 400px;
+      height: 125px;
+    }
+
+    &__box::after{
+      left: calc(100% + 30px);
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+    &__box-img{
+      max-width: 330px;
+      max-height: 330px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .mission-careers{
+
+    .container{
+      max-width: 670px;
+    }
+
+    &__container{
+      flex-direction: column-reverse;
+    }
+
+    &__wrapper{
+      align-items: center;
+      max-width: 575px;
+      text-align: center;
+    }
+
+    &__box::before{
+      left: calc(50% - 282px);
+      width: 580px;
+      height: 145px;
+    }
+
+    &__box{
+      margin-bottom: 64px;
+    }
+
+    &__box::after{
+      left: calc(100% + 64px);
+      max-width: 445px;
+      max-height: 445px;
+    }
+
+
+    &__box-img{
+      max-width: 445px;
+      max-height: 445px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .mission-careers{
+
+    .container{
+      max-width: 430px;
+    }
+
+    &__wrapper{
+      max-width: 385px;
+    }
+
+    &__wrapper-title{
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__box::before{
+      left: calc(50% - 180px);
+      width: 380px;
+      height: 105px;
+    }
+
+    &__box{
+      margin-bottom: 60px;
+    }
+
+    &__box::after{
+      display: none;
+    }
+
+
+    &__box-img{
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .mission-careers{
+
+    .container{
+      max-width: 370px;
+    }
+
+    &__wrapper-title{
+      font-size: 35px;
+      line-height: 35px;
+    }
+
+    &__box::before{
+      left: calc(50% - 160px);
+      width: 320px;
+      height: 100px;
+    }
+
+    &__box{
+      margin-bottom: 56px;
+    }
+
+    &__box-img{
+      max-width: 280px;
+      max-height: 280px;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .mission-careers{
+
+    .container{
+      max-width: 320px;
+    }
+
+    &__wrapper-title{
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &__box::before{
+      left: calc(50% - 155px);
+      width: 310px;
+    }
+
+    &__box-img{
+      max-width: 250px;
+      max-height: 250px;
+    }
   }
 }
